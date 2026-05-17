@@ -1,0 +1,2732 @@
+[
+  {
+    "id": "broker01",
+    "type": "mqtt-broker",
+    "name": "EMQX Public Broker",
+    "broker": "broker.emqx.io",
+    "port": "1883",
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": "4",
+    "keepalive": "60",
+    "cleansession": true,
+    "autoUnsubscribe": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthRetain": "false",
+    "birthPayload": "",
+    "birthMsg": {},
+    "closeTopic": "",
+    "closeQos": "0",
+    "closeRetain": "false",
+    "closePayload": "",
+    "closeMsg": {},
+    "willTopic": "",
+    "willQos": "0",
+    "willRetain": "false",
+    "willPayload": "",
+    "willMsg": {},
+    "sessionExpiry": ""
+  },
+  {
+    "id": "db-base",
+    "type": "ui-base",
+    "name": "Wildlife Habitat Monitor",
+    "path": "/dashboard",
+    "appIcon": "",
+    "includeClientData": true,
+    "acceptsClientConfig": [
+      "ui-notification",
+      "ui-control"
+    ],
+    "showPathInSidebar": false,
+    "headerContent": "page",
+    "navigationStyle": "default",
+    "titleBarStyle": "default",
+    "showReconnectNotification": true,
+    "notificationDisplayTime": 1,
+    "showDisconnectNotification": true,
+    "allowInstall": false
+  },
+  {
+    "id": "db-theme",
+    "type": "ui-theme",
+    "name": "Wildlife Theme",
+    "colors": {
+      "surface": "#1a1f2e",
+      "primary": "#2ecc71",
+      "bgPage": "#0f1119",
+      "groupBg": "#1e2436",
+      "groupOutline": "#2c3454"
+    },
+    "sizes": {
+      "density": "default",
+      "pagePadding": "12px",
+      "groupGap": "12px",
+      "groupBorderRadius": "8px",
+      "widgetGap": "12px"
+    }
+  },
+  {
+    "id": "page-overview",
+    "type": "ui-page",
+    "name": "Reserve Overview",
+    "ui": "db-base",
+    "path": "/page-overview",
+    "icon": "map",
+    "layout": "grid",
+    "theme": "db-theme",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 1,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "page-zone1",
+    "type": "ui-page",
+    "name": "Zone 1 \u2014 Leopard Highlands",
+    "ui": "db-base",
+    "path": "/page-zone1",
+    "icon": "pets",
+    "layout": "grid",
+    "theme": "db-theme",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 2,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "page-zone2",
+    "type": "ui-page",
+    "name": "Zone 2 \u2014 Oryx Plains",
+    "ui": "db-base",
+    "path": "/page-zone2",
+    "icon": "pets",
+    "layout": "grid",
+    "theme": "db-theme",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 3,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "page-zone3",
+    "type": "ui-page",
+    "name": "Zone 3 \u2014 Gazelle Valley",
+    "ui": "db-base",
+    "path": "/page-zone3",
+    "icon": "pets",
+    "layout": "grid",
+    "theme": "db-theme",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 4,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "grp-ov-z1",
+    "type": "ui-group",
+    "name": "Zone 1 \u2014 Leopard Highlands",
+    "page": "page-overview",
+    "width": 4,
+    "height": 1,
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-ov-z2",
+    "type": "ui-group",
+    "name": "Zone 2 \u2014 Oryx Plains",
+    "page": "page-overview",
+    "width": 4,
+    "height": 1,
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-ov-z3",
+    "type": "ui-group",
+    "name": "Zone 3 \u2014 Gazelle Valley",
+    "page": "page-overview",
+    "width": 4,
+    "height": 1,
+    "order": 3,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-ov-demo",
+    "type": "ui-group",
+    "name": "Demo Controls",
+    "page": "page-overview",
+    "width": 12,
+    "height": 1,
+    "order": 4,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z1-sensors",
+    "type": "ui-group",
+    "name": "Live Sensor Readings",
+    "page": "page-zone1",
+    "width": 6,
+    "height": 1,
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z1-alerts",
+    "type": "ui-group",
+    "name": "Alert Panel",
+    "page": "page-zone1",
+    "width": 6,
+    "height": 1,
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z1-demo",
+    "type": "ui-group",
+    "name": "Demo Triggers",
+    "page": "page-zone1",
+    "width": 12,
+    "height": 1,
+    "order": 3,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z2-sensors",
+    "type": "ui-group",
+    "name": "Live Sensor Readings",
+    "page": "page-zone2",
+    "width": 6,
+    "height": 1,
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z2-alerts",
+    "type": "ui-group",
+    "name": "Alert Panel",
+    "page": "page-zone2",
+    "width": 6,
+    "height": 1,
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z2-demo",
+    "type": "ui-group",
+    "name": "Demo Triggers",
+    "page": "page-zone2",
+    "width": 12,
+    "height": 1,
+    "order": 3,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z3-sensors",
+    "type": "ui-group",
+    "name": "Live Sensor Readings",
+    "page": "page-zone3",
+    "width": 6,
+    "height": 1,
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z3-alerts",
+    "type": "ui-group",
+    "name": "Alert Panel",
+    "page": "page-zone3",
+    "width": 6,
+    "height": 1,
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "grp-z3-demo",
+    "type": "ui-group",
+    "name": "Demo Triggers",
+    "page": "page-zone3",
+    "width": 12,
+    "height": 1,
+    "order": 3,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "tab-zone1",
+    "type": "tab",
+    "label": "Zone 1 \u2014 Leopard Highlands",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "tab-zone2",
+    "type": "tab",
+    "label": "Zone 2 \u2014 Oryx Plains",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "tab-zone3",
+    "type": "tab",
+    "label": "Zone 3 \u2014 Gazelle Valley",
+    "disabled": false,
+    "info": "",
+    "env": []
+  },
+  {
+    "id": "z1-inject",
+    "type": "inject",
+    "z": "tab-zone1",
+    "name": "Trigger Sensor Cycle \u2014 Zone 1 \u2014 Leopard Highlands",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "5",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.5,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 60,
+    "wires": [
+      [
+        "z1-sim-temp",
+        "z1-sim-water",
+        "z1-sim-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-sim-temp",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Simulate Temperature \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Simulate temperature for Zone 1 \u2014 Leopard Highlands (Arabian Leopard)\nlet rand = Math.random();\nlet temperature;\nif (rand < 0.60) {\n    temperature = Math.floor(Math.random() * (42 - 25 + 1)) + 25;\n} else if (rand < 0.85) {\n    temperature = Math.floor(Math.random() * (45 - 43 + 1)) + 43;\n} else {\n    temperature = Math.floor(Math.random() * (52 - 46 + 1)) + 46;\n}\nmsg.payload = JSON.stringify({ temperature: temperature });\nmsg.topic = \"wildlife/zone1/temperature\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 60,
+    "wires": [
+      [
+        "z1-pub-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z1-sim-water",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Simulate Water Level \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Simulate water level for Zone 1 \u2014 Leopard Highlands (Arabian Leopard)\nlet waterRand = Math.random();\nlet water_level;\nif (waterRand < 0.55)      { water_level = \"high\"; }\nelse if (waterRand < 0.80) { water_level = \"medium\"; }\nelse if (waterRand < 0.92) { water_level = \"low\"; }\nelse                       { water_level = \"empty\"; }\nmsg.payload = JSON.stringify({ water_level: water_level });\nmsg.topic = \"wildlife/zone1/water\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 140,
+    "wires": [
+      [
+        "z1-pub-water"
+      ]
+    ]
+  },
+  {
+    "id": "z1-sim-motion",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Simulate Motion \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Simulate motion for Zone 1 \u2014 Leopard Highlands (Arabian Leopard)\nlet motion = Math.random() > 0.40 ? 1 : 0;\nlet type = \"none\";\nif (motion === 1) {\n    type = Math.random() > 0.85 ? \"intruder\" : \"animal\";\n}\nmsg.payload = JSON.stringify({ motion: motion, type: type });\nmsg.topic = \"wildlife/zone1/motion\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 220,
+    "wires": [
+      [
+        "z1-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Publish \u2014 wildlife/zone1/temperature",
+    "topic": "wildlife/zone1/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "z1-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Publish \u2014 wildlife/zone1/water",
+    "topic": "wildlife/zone1/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "z1-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Publish \u2014 wildlife/zone1/motion",
+    "topic": "wildlife/zone1/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "z1-sub-temp",
+    "type": "mqtt in",
+    "z": "tab-zone1",
+    "name": "Subscribe \u2014 wildlife/zone1/temperature",
+    "topic": "wildlife/zone1/temperature",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 340,
+    "wires": [
+      [
+        "z1-proc-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z1-sub-water",
+    "type": "mqtt in",
+    "z": "tab-zone1",
+    "name": "Subscribe \u2014 wildlife/zone1/water",
+    "topic": "wildlife/zone1/water",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 420,
+    "wires": [
+      [
+        "z1-proc-water"
+      ]
+    ]
+  },
+  {
+    "id": "z1-sub-motion",
+    "type": "mqtt in",
+    "z": "tab-zone1",
+    "name": "Subscribe \u2014 wildlife/zone1/motion",
+    "topic": "wildlife/zone1/motion",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 500,
+    "wires": [
+      [
+        "z1-proc-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-proc-temp",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Evaluate Temperature \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Evaluate temperature threshold for Zone 1 \u2014 Leopard Highlands\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet temp = data.temperature;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Temperature within safe range: \" + temp + \"\u00b0C\";\nif (temp > 45) {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Temperature at \" + temp + \"\u00b0C. Immediate cooling required!\";\n} else if (temp > 42) {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Temperature at \" + temp + \"\u00b0C. Approaching unsafe threshold.\";\n}\n// Store in flow context for combined alert logic\nflow.set(\"z1_temp_status\", status);\nflow.set(\"z1_temp_alert\",  alert);\nflow.set(\"z1_temp_value\",  temp);\n// Pass temperature value to gauge\nmsg.payload = temp;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 340,
+    "wires": [
+      [
+        "z1-gauge-temp",
+        "z1-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z1-proc-water",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Evaluate Water Level \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Evaluate water level threshold for Zone 1 \u2014 Leopard Highlands\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet lvl = data.water_level;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Water supply is adequate: \" + lvl;\nif (lvl === \"empty\") {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Water source depleted. Animal survival at immediate risk!\";\n} else if (lvl === \"low\") {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Water level is low. Refill stations required soon.\";\n}\nflow.set(\"z1_water_status\", status);\nflow.set(\"z1_water_alert\",  alert);\nlet icons = { high:\"\ud83d\udca7\ud83d\udca7\ud83d\udca7 High\", medium:\"\ud83d\udca7\ud83d\udca7 Medium\", low:\"\ud83d\udca7 Low \u26a0\ufe0f\", empty:\"\u274c Empty \u2014 CRITICAL\" };\nmsg.payload = icons[lvl] || lvl;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 420,
+    "wires": [
+      [
+        "z1-text-water",
+        "z1-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z1-proc-motion",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Evaluate Motion \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Evaluate motion/intruder threshold for Zone 1 \u2014 Leopard Highlands\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet motion = data.motion;\nlet type   = data.type || \"none\";\nlet status = \"STABLE\";\nlet alert  = \"\u26aa No motion detected in zone.\";\nif (motion === 1) {\n    if (type === \"intruder\") {\n        status = \"CRITICAL\";\n        alert  = \"\ud83d\udd34 CRITICAL \u2014 Unauthorized intruder detected in Zone 1 \u2014 Leopard Highlands! Ranger dispatch required.\";\n    } else {\n        alert = \"\ud83d\udc3e Animal activity detected in zone. Normal behaviour.\";\n    }\n}\nflow.set(\"z1_motion_status\", status);\nflow.set(\"z1_motion_alert\",  alert);\nlet icons = { none:\"\u26aa No Motion Detected\", animal:\"\ud83d\udc3e Animal Activity Detected\", intruder:\"\ud83d\udea8 INTRUDER DETECTED\" };\nmsg.payload = icons[type] || icons[\"none\"];\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 500,
+    "wires": [
+      [
+        "z1-text-motion",
+        "z1-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z1-update-alert",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Aggregate Zone Status \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Aggregate all sensor statuses into a single zone status for Zone 1 \u2014 Leopard Highlands\n// Priority: CRITICAL > WARNING > STABLE\nlet statuses = [\n    flow.get(\"z1_temp_status\")   || \"STABLE\",\n    flow.get(\"z1_water_status\")  || \"STABLE\",\n    flow.get(\"z1_motion_status\") || \"STABLE\"\n];\nlet alerts = [\n    flow.get(\"z1_temp_alert\")   || \"\",\n    flow.get(\"z1_water_alert\")  || \"\",\n    flow.get(\"z1_motion_alert\") || \"\"\n];\n\nlet finalStatus = \"STABLE\";\nlet finalAlert  = \"\u2705 All conditions within safe parameters.\";\n\nif (statuses.includes(\"CRITICAL\")) {\n    finalStatus = \"CRITICAL\";\n    finalAlert  = alerts[statuses.indexOf(\"CRITICAL\")];\n} else if (statuses.includes(\"WARNING\")) {\n    finalStatus = \"WARNING\";\n    finalAlert  = alerts[statuses.indexOf(\"WARNING\")];\n}\n\nlet statusIcon = { STABLE:\"\ud83d\udfe2 STABLE\", WARNING:\"\ud83d\udfe1 WARNING\", CRITICAL:\"\ud83d\udd34 CRITICAL\" };\n\n// Output 1: status display text\nlet m1 = { payload: statusIcon[finalStatus] };\n// Output 2: alert message text\nlet m2 = { payload: finalAlert };\n// Output 3: formatted MQTT alert JSON\nlet m3 = { payload: JSON.stringify({\n    zone:   \"Zone 1 \u2014 Leopard Highlands\",\n    status: finalStatus,\n    alert:  finalAlert,\n    time:   new Date().toISOString()\n}) };\nreturn [m1, m2, m3];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 700,
+    "y": 420,
+    "wires": [
+      [
+        "z1-text-status-ov",
+        "z1-text-status-detail"
+      ],
+      [
+        "z1-text-alert-ov",
+        "z1-text-alert-detail"
+      ],
+      [
+        "z1-pub-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z1-pub-alert",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Publish \u2014 wildlife/zone1/alerts",
+    "topic": "wildlife/zone1/alerts",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-stable-inject",
+    "type": "inject",
+    "z": "tab-zone1",
+    "name": "\u25b6 Demo STABLE \u2014 Zone 1 \u2014 Leopard Highlands",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 620,
+    "wires": [
+      [
+        "z1-demo-stable-func"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-stable-func",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Inject Demo STABLE Payload \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Inject Demo STABLE values for Zone 1 \u2014 Leopard Highlands\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 30 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"high\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 0, type: \"none\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 620,
+    "wires": [
+      [
+        "z1-demo-stable-pub-temp"
+      ],
+      [
+        "z1-demo-stable-pub-water"
+      ],
+      [
+        "z1-demo-stable-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-stable-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/temperature",
+    "topic": "wildlife/zone1/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-stable-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/water",
+    "topic": "wildlife/zone1/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 620,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-stable-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/motion",
+    "topic": "wildlife/zone1/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-warn-inject",
+    "type": "inject",
+    "z": "tab-zone1",
+    "name": "\u25b6 Demo WARNING \u2014 Zone 1 \u2014 Leopard Highlands",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 700,
+    "wires": [
+      [
+        "z1-demo-warn-func"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-warn-func",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Inject Demo WARNING Payload \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Inject Demo WARNING values for Zone 1 \u2014 Leopard Highlands\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 44 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"low\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"animal\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 700,
+    "wires": [
+      [
+        "z1-demo-warn-pub-temp"
+      ],
+      [
+        "z1-demo-warn-pub-water"
+      ],
+      [
+        "z1-demo-warn-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-warn-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/temperature",
+    "topic": "wildlife/zone1/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-warn-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/water",
+    "topic": "wildlife/zone1/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-warn-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/motion",
+    "topic": "wildlife/zone1/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-crit-inject",
+    "type": "inject",
+    "z": "tab-zone1",
+    "name": "\u25b6 Demo CRITICAL \u2014 Zone 1 \u2014 Leopard Highlands",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 780,
+    "wires": [
+      [
+        "z1-demo-crit-func"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-crit-func",
+    "type": "function",
+    "z": "tab-zone1",
+    "name": "Inject Demo CRITICAL Payload \u2014 Zone 1 \u2014 Leopard Highlands",
+    "func": "// Inject Demo CRITICAL values for Zone 1 \u2014 Leopard Highlands\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 47 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"empty\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"intruder\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 780,
+    "wires": [
+      [
+        "z1-demo-crit-pub-temp"
+      ],
+      [
+        "z1-demo-crit-pub-water"
+      ],
+      [
+        "z1-demo-crit-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z1-demo-crit-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/temperature",
+    "topic": "wildlife/zone1/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-crit-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/water",
+    "topic": "wildlife/zone1/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 780,
+    "wires": []
+  },
+  {
+    "id": "z1-demo-crit-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone1",
+    "name": "Demo Publish \u2014 wildlife/zone1/motion",
+    "topic": "wildlife/zone1/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 820,
+    "wires": []
+  },
+  {
+    "id": "z1-gauge-temp",
+    "type": "ui-gauge",
+    "z": "tab-zone1",
+    "name": "Temperature Gauge \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-z1-sensors",
+    "order": 1,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 3,
+    "height": 3,
+    "gtype": "gauge-half",
+    "gstyle": "needle",
+    "title": "Temperature (\u00b0C)",
+    "alwaysShowTitle": true,
+    "floatingTitlePosition": "top-left",
+    "units": "\u00b0C",
+    "icon": "",
+    "prefix": "",
+    "suffix": "\u00b0C",
+    "segments": [
+      {
+        "from": "25",
+        "color": "#27ae60",
+        "text": "Safe",
+        "textType": "label"
+      },
+      {
+        "from": "43",
+        "color": "#f39c12",
+        "text": "Warning",
+        "textType": "label"
+      },
+      {
+        "from": "46",
+        "color": "#c0392b",
+        "text": "Critical",
+        "textType": "label"
+      }
+    ],
+    "min": "25",
+    "max": "52",
+    "sizeThickness": 20,
+    "sizeGap": 4,
+    "sizeKeyThickness": 10,
+    "styleRounded": true,
+    "styleGlow": true,
+    "className": "",
+    "x": 960,
+    "y": 340,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "z1-text-water",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Water Level \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-z1-sensors",
+    "order": 2,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udca7 Water Level",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z1-text-motion",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Motion Status \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-z1-sensors",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udd0d Motion",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 500,
+    "wires": []
+  },
+  {
+    "id": "z1-text-status-ov",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Zone Status (Overview) \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-ov-z1",
+    "order": 1,
+    "width": 4,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 20,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "z1-text-alert-ov",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Active Alert (Overview) \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-ov-z1",
+    "order": 2,
+    "width": 4,
+    "height": 2,
+    "label": "Latest Alert",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 14,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "z1-text-status-detail",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Zone Status (Detail) \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-z1-alerts",
+    "order": 1,
+    "width": 6,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 22,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z1-text-alert-detail",
+    "type": "ui-text",
+    "z": "tab-zone1",
+    "name": "Alert Message (Detail) \u2014 Zone 1 \u2014 Leopard Highlands",
+    "group": "grp-z1-alerts",
+    "order": 2,
+    "width": 6,
+    "height": 2,
+    "label": "Alert Message",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 15,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "z2-inject",
+    "type": "inject",
+    "z": "tab-zone2",
+    "name": "Trigger Sensor Cycle \u2014 Zone 2 \u2014 Oryx Plains",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "5",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.5,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 60,
+    "wires": [
+      [
+        "z2-sim-temp",
+        "z2-sim-water",
+        "z2-sim-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-sim-temp",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Simulate Temperature \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Simulate temperature for Zone 2 \u2014 Oryx Plains (Arabian Oryx)\nlet rand = Math.random();\nlet temperature;\nif (rand < 0.60) {\n    temperature = Math.floor(Math.random() * (42 - 25 + 1)) + 25;\n} else if (rand < 0.85) {\n    temperature = Math.floor(Math.random() * (45 - 43 + 1)) + 43;\n} else {\n    temperature = Math.floor(Math.random() * (52 - 46 + 1)) + 46;\n}\nmsg.payload = JSON.stringify({ temperature: temperature });\nmsg.topic = \"wildlife/zone2/temperature\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 60,
+    "wires": [
+      [
+        "z2-pub-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z2-sim-water",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Simulate Water Level \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Simulate water level for Zone 2 \u2014 Oryx Plains (Arabian Oryx)\nlet waterRand = Math.random();\nlet water_level;\nif (waterRand < 0.55)      { water_level = \"high\"; }\nelse if (waterRand < 0.80) { water_level = \"medium\"; }\nelse if (waterRand < 0.92) { water_level = \"low\"; }\nelse                       { water_level = \"empty\"; }\nmsg.payload = JSON.stringify({ water_level: water_level });\nmsg.topic = \"wildlife/zone2/water\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 140,
+    "wires": [
+      [
+        "z2-pub-water"
+      ]
+    ]
+  },
+  {
+    "id": "z2-sim-motion",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Simulate Motion \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Simulate motion for Zone 2 \u2014 Oryx Plains (Arabian Oryx)\nlet motion = Math.random() > 0.40 ? 1 : 0;\nlet type = \"none\";\nif (motion === 1) {\n    type = Math.random() > 0.85 ? \"intruder\" : \"animal\";\n}\nmsg.payload = JSON.stringify({ motion: motion, type: type });\nmsg.topic = \"wildlife/zone2/motion\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 220,
+    "wires": [
+      [
+        "z2-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Publish \u2014 wildlife/zone2/temperature",
+    "topic": "wildlife/zone2/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "z2-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Publish \u2014 wildlife/zone2/water",
+    "topic": "wildlife/zone2/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "z2-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Publish \u2014 wildlife/zone2/motion",
+    "topic": "wildlife/zone2/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "z2-sub-temp",
+    "type": "mqtt in",
+    "z": "tab-zone2",
+    "name": "Subscribe \u2014 wildlife/zone2/temperature",
+    "topic": "wildlife/zone2/temperature",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 340,
+    "wires": [
+      [
+        "z2-proc-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z2-sub-water",
+    "type": "mqtt in",
+    "z": "tab-zone2",
+    "name": "Subscribe \u2014 wildlife/zone2/water",
+    "topic": "wildlife/zone2/water",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 420,
+    "wires": [
+      [
+        "z2-proc-water"
+      ]
+    ]
+  },
+  {
+    "id": "z2-sub-motion",
+    "type": "mqtt in",
+    "z": "tab-zone2",
+    "name": "Subscribe \u2014 wildlife/zone2/motion",
+    "topic": "wildlife/zone2/motion",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 500,
+    "wires": [
+      [
+        "z2-proc-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-proc-temp",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Evaluate Temperature \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Evaluate temperature threshold for Zone 2 \u2014 Oryx Plains\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet temp = data.temperature;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Temperature within safe range: \" + temp + \"\u00b0C\";\nif (temp > 45) {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Temperature at \" + temp + \"\u00b0C. Immediate cooling required!\";\n} else if (temp > 42) {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Temperature at \" + temp + \"\u00b0C. Approaching unsafe threshold.\";\n}\n// Store in flow context for combined alert logic\nflow.set(\"z2_temp_status\", status);\nflow.set(\"z2_temp_alert\",  alert);\nflow.set(\"z2_temp_value\",  temp);\n// Pass temperature value to gauge\nmsg.payload = temp;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 340,
+    "wires": [
+      [
+        "z2-gauge-temp",
+        "z2-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z2-proc-water",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Evaluate Water Level \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Evaluate water level threshold for Zone 2 \u2014 Oryx Plains\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet lvl = data.water_level;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Water supply is adequate: \" + lvl;\nif (lvl === \"empty\") {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Water source depleted. Animal survival at immediate risk!\";\n} else if (lvl === \"low\") {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Water level is low. Refill stations required soon.\";\n}\nflow.set(\"z2_water_status\", status);\nflow.set(\"z2_water_alert\",  alert);\nlet icons = { high:\"\ud83d\udca7\ud83d\udca7\ud83d\udca7 High\", medium:\"\ud83d\udca7\ud83d\udca7 Medium\", low:\"\ud83d\udca7 Low \u26a0\ufe0f\", empty:\"\u274c Empty \u2014 CRITICAL\" };\nmsg.payload = icons[lvl] || lvl;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 420,
+    "wires": [
+      [
+        "z2-text-water",
+        "z2-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z2-proc-motion",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Evaluate Motion \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Evaluate motion/intruder threshold for Zone 2 \u2014 Oryx Plains\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet motion = data.motion;\nlet type   = data.type || \"none\";\nlet status = \"STABLE\";\nlet alert  = \"\u26aa No motion detected in zone.\";\nif (motion === 1) {\n    if (type === \"intruder\") {\n        status = \"CRITICAL\";\n        alert  = \"\ud83d\udd34 CRITICAL \u2014 Unauthorized intruder detected in Zone 2 \u2014 Oryx Plains! Ranger dispatch required.\";\n    } else {\n        alert = \"\ud83d\udc3e Animal activity detected in zone. Normal behaviour.\";\n    }\n}\nflow.set(\"z2_motion_status\", status);\nflow.set(\"z2_motion_alert\",  alert);\nlet icons = { none:\"\u26aa No Motion Detected\", animal:\"\ud83d\udc3e Animal Activity Detected\", intruder:\"\ud83d\udea8 INTRUDER DETECTED\" };\nmsg.payload = icons[type] || icons[\"none\"];\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 500,
+    "wires": [
+      [
+        "z2-text-motion",
+        "z2-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z2-update-alert",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Aggregate Zone Status \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Aggregate all sensor statuses into a single zone status for Zone 2 \u2014 Oryx Plains\n// Priority: CRITICAL > WARNING > STABLE\nlet statuses = [\n    flow.get(\"z2_temp_status\")   || \"STABLE\",\n    flow.get(\"z2_water_status\")  || \"STABLE\",\n    flow.get(\"z2_motion_status\") || \"STABLE\"\n];\nlet alerts = [\n    flow.get(\"z2_temp_alert\")   || \"\",\n    flow.get(\"z2_water_alert\")  || \"\",\n    flow.get(\"z2_motion_alert\") || \"\"\n];\n\nlet finalStatus = \"STABLE\";\nlet finalAlert  = \"\u2705 All conditions within safe parameters.\";\n\nif (statuses.includes(\"CRITICAL\")) {\n    finalStatus = \"CRITICAL\";\n    finalAlert  = alerts[statuses.indexOf(\"CRITICAL\")];\n} else if (statuses.includes(\"WARNING\")) {\n    finalStatus = \"WARNING\";\n    finalAlert  = alerts[statuses.indexOf(\"WARNING\")];\n}\n\nlet statusIcon = { STABLE:\"\ud83d\udfe2 STABLE\", WARNING:\"\ud83d\udfe1 WARNING\", CRITICAL:\"\ud83d\udd34 CRITICAL\" };\n\n// Output 1: status display text\nlet m1 = { payload: statusIcon[finalStatus] };\n// Output 2: alert message text\nlet m2 = { payload: finalAlert };\n// Output 3: formatted MQTT alert JSON\nlet m3 = { payload: JSON.stringify({\n    zone:   \"Zone 2 \u2014 Oryx Plains\",\n    status: finalStatus,\n    alert:  finalAlert,\n    time:   new Date().toISOString()\n}) };\nreturn [m1, m2, m3];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 700,
+    "y": 420,
+    "wires": [
+      [
+        "z2-text-status-ov",
+        "z2-text-status-detail"
+      ],
+      [
+        "z2-text-alert-ov",
+        "z2-text-alert-detail"
+      ],
+      [
+        "z2-pub-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z2-pub-alert",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Publish \u2014 wildlife/zone2/alerts",
+    "topic": "wildlife/zone2/alerts",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-stable-inject",
+    "type": "inject",
+    "z": "tab-zone2",
+    "name": "\u25b6 Demo STABLE \u2014 Zone 2 \u2014 Oryx Plains",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 620,
+    "wires": [
+      [
+        "z2-demo-stable-func"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-stable-func",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Inject Demo STABLE Payload \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Inject Demo STABLE values for Zone 2 \u2014 Oryx Plains\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 30 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"high\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 0, type: \"none\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 620,
+    "wires": [
+      [
+        "z2-demo-stable-pub-temp"
+      ],
+      [
+        "z2-demo-stable-pub-water"
+      ],
+      [
+        "z2-demo-stable-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-stable-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/temperature",
+    "topic": "wildlife/zone2/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-stable-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/water",
+    "topic": "wildlife/zone2/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 620,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-stable-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/motion",
+    "topic": "wildlife/zone2/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-warn-inject",
+    "type": "inject",
+    "z": "tab-zone2",
+    "name": "\u25b6 Demo WARNING \u2014 Zone 2 \u2014 Oryx Plains",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 700,
+    "wires": [
+      [
+        "z2-demo-warn-func"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-warn-func",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Inject Demo WARNING Payload \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Inject Demo WARNING values for Zone 2 \u2014 Oryx Plains\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 44 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"low\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"animal\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 700,
+    "wires": [
+      [
+        "z2-demo-warn-pub-temp"
+      ],
+      [
+        "z2-demo-warn-pub-water"
+      ],
+      [
+        "z2-demo-warn-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-warn-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/temperature",
+    "topic": "wildlife/zone2/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-warn-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/water",
+    "topic": "wildlife/zone2/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-warn-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/motion",
+    "topic": "wildlife/zone2/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-crit-inject",
+    "type": "inject",
+    "z": "tab-zone2",
+    "name": "\u25b6 Demo CRITICAL \u2014 Zone 2 \u2014 Oryx Plains",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 780,
+    "wires": [
+      [
+        "z2-demo-crit-func"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-crit-func",
+    "type": "function",
+    "z": "tab-zone2",
+    "name": "Inject Demo CRITICAL Payload \u2014 Zone 2 \u2014 Oryx Plains",
+    "func": "// Inject Demo CRITICAL values for Zone 2 \u2014 Oryx Plains\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 47 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"empty\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"intruder\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 780,
+    "wires": [
+      [
+        "z2-demo-crit-pub-temp"
+      ],
+      [
+        "z2-demo-crit-pub-water"
+      ],
+      [
+        "z2-demo-crit-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z2-demo-crit-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/temperature",
+    "topic": "wildlife/zone2/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-crit-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/water",
+    "topic": "wildlife/zone2/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 780,
+    "wires": []
+  },
+  {
+    "id": "z2-demo-crit-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone2",
+    "name": "Demo Publish \u2014 wildlife/zone2/motion",
+    "topic": "wildlife/zone2/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 820,
+    "wires": []
+  },
+  {
+    "id": "z2-gauge-temp",
+    "type": "ui-gauge",
+    "z": "tab-zone2",
+    "name": "Temperature Gauge \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-z2-sensors",
+    "order": 1,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 3,
+    "height": 3,
+    "gtype": "gauge-half",
+    "gstyle": "needle",
+    "title": "Temperature (\u00b0C)",
+    "alwaysShowTitle": true,
+    "floatingTitlePosition": "top-left",
+    "units": "\u00b0C",
+    "icon": "",
+    "prefix": "",
+    "suffix": "\u00b0C",
+    "segments": [
+      {
+        "from": "25",
+        "color": "#27ae60",
+        "text": "Safe",
+        "textType": "label"
+      },
+      {
+        "from": "43",
+        "color": "#f39c12",
+        "text": "Warning",
+        "textType": "label"
+      },
+      {
+        "from": "46",
+        "color": "#c0392b",
+        "text": "Critical",
+        "textType": "label"
+      }
+    ],
+    "min": "25",
+    "max": "52",
+    "sizeThickness": 20,
+    "sizeGap": 4,
+    "sizeKeyThickness": 10,
+    "styleRounded": true,
+    "styleGlow": true,
+    "className": "",
+    "x": 960,
+    "y": 340,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "z2-text-water",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Water Level \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-z2-sensors",
+    "order": 2,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udca7 Water Level",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z2-text-motion",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Motion Status \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-z2-sensors",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udd0d Motion",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 500,
+    "wires": []
+  },
+  {
+    "id": "z2-text-status-ov",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Zone Status (Overview) \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-ov-z2",
+    "order": 1,
+    "width": 4,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 20,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "z2-text-alert-ov",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Active Alert (Overview) \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-ov-z2",
+    "order": 2,
+    "width": 4,
+    "height": 2,
+    "label": "Latest Alert",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 14,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "z2-text-status-detail",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Zone Status (Detail) \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-z2-alerts",
+    "order": 1,
+    "width": 6,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 22,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z2-text-alert-detail",
+    "type": "ui-text",
+    "z": "tab-zone2",
+    "name": "Alert Message (Detail) \u2014 Zone 2 \u2014 Oryx Plains",
+    "group": "grp-z2-alerts",
+    "order": 2,
+    "width": 6,
+    "height": 2,
+    "label": "Alert Message",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 15,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 480,
+    "wires": []
+  },
+  {
+    "id": "z3-inject",
+    "type": "inject",
+    "z": "tab-zone3",
+    "name": "Trigger Sensor Cycle \u2014 Zone 3 \u2014 Gazelle Valley",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "5",
+    "crontab": "",
+    "once": true,
+    "onceDelay": 0.5,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 60,
+    "wires": [
+      [
+        "z3-sim-temp",
+        "z3-sim-water",
+        "z3-sim-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-sim-temp",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Simulate Temperature \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Simulate temperature for Zone 3 \u2014 Gazelle Valley (Arabian Gazelle)\nlet rand = Math.random();\nlet temperature;\nif (rand < 0.60) {\n    temperature = Math.floor(Math.random() * (42 - 25 + 1)) + 25;\n} else if (rand < 0.85) {\n    temperature = Math.floor(Math.random() * (45 - 43 + 1)) + 43;\n} else {\n    temperature = Math.floor(Math.random() * (52 - 46 + 1)) + 46;\n}\nmsg.payload = JSON.stringify({ temperature: temperature });\nmsg.topic = \"wildlife/zone3/temperature\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 60,
+    "wires": [
+      [
+        "z3-pub-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z3-sim-water",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Simulate Water Level \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Simulate water level for Zone 3 \u2014 Gazelle Valley (Arabian Gazelle)\nlet waterRand = Math.random();\nlet water_level;\nif (waterRand < 0.55)      { water_level = \"high\"; }\nelse if (waterRand < 0.80) { water_level = \"medium\"; }\nelse if (waterRand < 0.92) { water_level = \"low\"; }\nelse                       { water_level = \"empty\"; }\nmsg.payload = JSON.stringify({ water_level: water_level });\nmsg.topic = \"wildlife/zone3/water\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 140,
+    "wires": [
+      [
+        "z3-pub-water"
+      ]
+    ]
+  },
+  {
+    "id": "z3-sim-motion",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Simulate Motion \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Simulate motion for Zone 3 \u2014 Gazelle Valley (Arabian Gazelle)\nlet motion = Math.random() > 0.40 ? 1 : 0;\nlet type = \"none\";\nif (motion === 1) {\n    type = Math.random() > 0.85 ? \"intruder\" : \"animal\";\n}\nmsg.payload = JSON.stringify({ motion: motion, type: type });\nmsg.topic = \"wildlife/zone3/motion\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 220,
+    "wires": [
+      [
+        "z3-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Publish \u2014 wildlife/zone3/temperature",
+    "topic": "wildlife/zone3/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 60,
+    "wires": []
+  },
+  {
+    "id": "z3-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Publish \u2014 wildlife/zone3/water",
+    "topic": "wildlife/zone3/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 140,
+    "wires": []
+  },
+  {
+    "id": "z3-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Publish \u2014 wildlife/zone3/motion",
+    "topic": "wildlife/zone3/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 710,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "z3-sub-temp",
+    "type": "mqtt in",
+    "z": "tab-zone3",
+    "name": "Subscribe \u2014 wildlife/zone3/temperature",
+    "topic": "wildlife/zone3/temperature",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 340,
+    "wires": [
+      [
+        "z3-proc-temp"
+      ]
+    ]
+  },
+  {
+    "id": "z3-sub-water",
+    "type": "mqtt in",
+    "z": "tab-zone3",
+    "name": "Subscribe \u2014 wildlife/zone3/water",
+    "topic": "wildlife/zone3/water",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 420,
+    "wires": [
+      [
+        "z3-proc-water"
+      ]
+    ]
+  },
+  {
+    "id": "z3-sub-motion",
+    "type": "mqtt in",
+    "z": "tab-zone3",
+    "name": "Subscribe \u2014 wildlife/zone3/motion",
+    "topic": "wildlife/zone3/motion",
+    "qos": "0",
+    "datatype": "auto-detect",
+    "broker": "broker01",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 500,
+    "wires": [
+      [
+        "z3-proc-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-proc-temp",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Evaluate Temperature \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Evaluate temperature threshold for Zone 3 \u2014 Gazelle Valley\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet temp = data.temperature;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Temperature within safe range: \" + temp + \"\u00b0C\";\nif (temp > 45) {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Temperature at \" + temp + \"\u00b0C. Immediate cooling required!\";\n} else if (temp > 42) {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Temperature at \" + temp + \"\u00b0C. Approaching unsafe threshold.\";\n}\n// Store in flow context for combined alert logic\nflow.set(\"z3_temp_status\", status);\nflow.set(\"z3_temp_alert\",  alert);\nflow.set(\"z3_temp_value\",  temp);\n// Pass temperature value to gauge\nmsg.payload = temp;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 340,
+    "wires": [
+      [
+        "z3-gauge-temp",
+        "z3-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z3-proc-water",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Evaluate Water Level \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Evaluate water level threshold for Zone 3 \u2014 Gazelle Valley\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet lvl = data.water_level;\nlet status = \"STABLE\";\nlet alert  = \"\u2705 Water supply is adequate: \" + lvl;\nif (lvl === \"empty\") {\n    status = \"CRITICAL\";\n    alert  = \"\ud83d\udd34 CRITICAL \u2014 Water source depleted. Animal survival at immediate risk!\";\n} else if (lvl === \"low\") {\n    status = \"WARNING\";\n    alert  = \"\ud83d\udfe1 WARNING \u2014 Water level is low. Refill stations required soon.\";\n}\nflow.set(\"z3_water_status\", status);\nflow.set(\"z3_water_alert\",  alert);\nlet icons = { high:\"\ud83d\udca7\ud83d\udca7\ud83d\udca7 High\", medium:\"\ud83d\udca7\ud83d\udca7 Medium\", low:\"\ud83d\udca7 Low \u26a0\ufe0f\", empty:\"\u274c Empty \u2014 CRITICAL\" };\nmsg.payload = icons[lvl] || lvl;\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 420,
+    "wires": [
+      [
+        "z3-text-water",
+        "z3-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z3-proc-motion",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Evaluate Motion \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Evaluate motion/intruder threshold for Zone 3 \u2014 Gazelle Valley\nlet data = msg.payload;\nif (typeof data === \"string\") { try { data = JSON.parse(data); } catch(e) { return null; } }\nlet motion = data.motion;\nlet type   = data.type || \"none\";\nlet status = \"STABLE\";\nlet alert  = \"\u26aa No motion detected in zone.\";\nif (motion === 1) {\n    if (type === \"intruder\") {\n        status = \"CRITICAL\";\n        alert  = \"\ud83d\udd34 CRITICAL \u2014 Unauthorized intruder detected in Zone 3 \u2014 Gazelle Valley! Ranger dispatch required.\";\n    } else {\n        alert = \"\ud83d\udc3e Animal activity detected in zone. Normal behaviour.\";\n    }\n}\nflow.set(\"z3_motion_status\", status);\nflow.set(\"z3_motion_alert\",  alert);\nlet icons = { none:\"\u26aa No Motion Detected\", animal:\"\ud83d\udc3e Animal Activity Detected\", intruder:\"\ud83d\udea8 INTRUDER DETECTED\" };\nmsg.payload = icons[type] || icons[\"none\"];\nmsg.status  = status;\nmsg.alert   = alert;\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 430,
+    "y": 500,
+    "wires": [
+      [
+        "z3-text-motion",
+        "z3-update-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z3-update-alert",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Aggregate Zone Status \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Aggregate all sensor statuses into a single zone status for Zone 3 \u2014 Gazelle Valley\n// Priority: CRITICAL > WARNING > STABLE\nlet statuses = [\n    flow.get(\"z3_temp_status\")   || \"STABLE\",\n    flow.get(\"z3_water_status\")  || \"STABLE\",\n    flow.get(\"z3_motion_status\") || \"STABLE\"\n];\nlet alerts = [\n    flow.get(\"z3_temp_alert\")   || \"\",\n    flow.get(\"z3_water_alert\")  || \"\",\n    flow.get(\"z3_motion_alert\") || \"\"\n];\n\nlet finalStatus = \"STABLE\";\nlet finalAlert  = \"\u2705 All conditions within safe parameters.\";\n\nif (statuses.includes(\"CRITICAL\")) {\n    finalStatus = \"CRITICAL\";\n    finalAlert  = alerts[statuses.indexOf(\"CRITICAL\")];\n} else if (statuses.includes(\"WARNING\")) {\n    finalStatus = \"WARNING\";\n    finalAlert  = alerts[statuses.indexOf(\"WARNING\")];\n}\n\nlet statusIcon = { STABLE:\"\ud83d\udfe2 STABLE\", WARNING:\"\ud83d\udfe1 WARNING\", CRITICAL:\"\ud83d\udd34 CRITICAL\" };\n\n// Output 1: status display text\nlet m1 = { payload: statusIcon[finalStatus] };\n// Output 2: alert message text\nlet m2 = { payload: finalAlert };\n// Output 3: formatted MQTT alert JSON\nlet m3 = { payload: JSON.stringify({\n    zone:   \"Zone 3 \u2014 Gazelle Valley\",\n    status: finalStatus,\n    alert:  finalAlert,\n    time:   new Date().toISOString()\n}) };\nreturn [m1, m2, m3];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 700,
+    "y": 420,
+    "wires": [
+      [
+        "z3-text-status-ov",
+        "z3-text-status-detail"
+      ],
+      [
+        "z3-text-alert-ov",
+        "z3-text-alert-detail"
+      ],
+      [
+        "z3-pub-alert"
+      ]
+    ]
+  },
+  {
+    "id": "z3-pub-alert",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Publish \u2014 wildlife/zone3/alerts",
+    "topic": "wildlife/zone3/alerts",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-stable-inject",
+    "type": "inject",
+    "z": "tab-zone3",
+    "name": "\u25b6 Demo STABLE \u2014 Zone 3 \u2014 Gazelle Valley",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 620,
+    "wires": [
+      [
+        "z3-demo-stable-func"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-stable-func",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Inject Demo STABLE Payload \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Inject Demo STABLE values for Zone 3 \u2014 Gazelle Valley\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 30 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"high\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 0, type: \"none\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 620,
+    "wires": [
+      [
+        "z3-demo-stable-pub-temp"
+      ],
+      [
+        "z3-demo-stable-pub-water"
+      ],
+      [
+        "z3-demo-stable-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-stable-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/temperature",
+    "topic": "wildlife/zone3/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-stable-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/water",
+    "topic": "wildlife/zone3/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 620,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-stable-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/motion",
+    "topic": "wildlife/zone3/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-warn-inject",
+    "type": "inject",
+    "z": "tab-zone3",
+    "name": "\u25b6 Demo WARNING \u2014 Zone 3 \u2014 Gazelle Valley",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 700,
+    "wires": [
+      [
+        "z3-demo-warn-func"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-warn-func",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Inject Demo WARNING Payload \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Inject Demo WARNING values for Zone 3 \u2014 Gazelle Valley\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 44 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"low\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"animal\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 700,
+    "wires": [
+      [
+        "z3-demo-warn-pub-temp"
+      ],
+      [
+        "z3-demo-warn-pub-water"
+      ],
+      [
+        "z3-demo-warn-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-warn-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/temperature",
+    "topic": "wildlife/zone3/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 660,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-warn-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/water",
+    "topic": "wildlife/zone3/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 700,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-warn-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/motion",
+    "topic": "wildlife/zone3/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-crit-inject",
+    "type": "inject",
+    "z": "tab-zone3",
+    "name": "\u25b6 Demo CRITICAL \u2014 Zone 3 \u2014 Gazelle Valley",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 160,
+    "y": 780,
+    "wires": [
+      [
+        "z3-demo-crit-func"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-crit-func",
+    "type": "function",
+    "z": "tab-zone3",
+    "name": "Inject Demo CRITICAL Payload \u2014 Zone 3 \u2014 Gazelle Valley",
+    "func": "// Inject Demo CRITICAL values for Zone 3 \u2014 Gazelle Valley\n// Output 1 \u2192 temperature topic\n// Output 2 \u2192 water topic\n// Output 3 \u2192 motion topic\nlet tempMsg   = { payload: JSON.stringify({ temperature: 47 }) };\nlet waterMsg  = { payload: JSON.stringify({ water_level: \"empty\" }) };\nlet motionMsg = { payload: JSON.stringify({ motion: 1, type: \"intruder\" }) };\nreturn [tempMsg, waterMsg, motionMsg];",
+    "outputs": 3,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 420,
+    "y": 780,
+    "wires": [
+      [
+        "z3-demo-crit-pub-temp"
+      ],
+      [
+        "z3-demo-crit-pub-water"
+      ],
+      [
+        "z3-demo-crit-pub-motion"
+      ]
+    ]
+  },
+  {
+    "id": "z3-demo-crit-pub-temp",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/temperature",
+    "topic": "wildlife/zone3/temperature",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 740,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-crit-pub-water",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/water",
+    "topic": "wildlife/zone3/water",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 780,
+    "wires": []
+  },
+  {
+    "id": "z3-demo-crit-pub-motion",
+    "type": "mqtt out",
+    "z": "tab-zone3",
+    "name": "Demo Publish \u2014 wildlife/zone3/motion",
+    "topic": "wildlife/zone3/motion",
+    "qos": "0",
+    "retain": "",
+    "broker": "broker01",
+    "x": 700,
+    "y": 820,
+    "wires": []
+  },
+  {
+    "id": "z3-gauge-temp",
+    "type": "ui-gauge",
+    "z": "tab-zone3",
+    "name": "Temperature Gauge \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-z3-sensors",
+    "order": 1,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 3,
+    "height": 3,
+    "gtype": "gauge-half",
+    "gstyle": "needle",
+    "title": "Temperature (\u00b0C)",
+    "alwaysShowTitle": true,
+    "floatingTitlePosition": "top-left",
+    "units": "\u00b0C",
+    "icon": "",
+    "prefix": "",
+    "suffix": "\u00b0C",
+    "segments": [
+      {
+        "from": "25",
+        "color": "#27ae60",
+        "text": "Safe",
+        "textType": "label"
+      },
+      {
+        "from": "43",
+        "color": "#f39c12",
+        "text": "Warning",
+        "textType": "label"
+      },
+      {
+        "from": "46",
+        "color": "#c0392b",
+        "text": "Critical",
+        "textType": "label"
+      }
+    ],
+    "min": "25",
+    "max": "52",
+    "sizeThickness": 20,
+    "sizeGap": 4,
+    "sizeKeyThickness": 10,
+    "styleRounded": true,
+    "styleGlow": true,
+    "className": "",
+    "x": 960,
+    "y": 340,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "z3-text-water",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Water Level \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-z3-sensors",
+    "order": 2,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udca7 Water Level",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z3-text-motion",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Motion Status \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-z3-sensors",
+    "order": 3,
+    "width": 3,
+    "height": 1,
+    "label": "\ud83d\udd0d Motion",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 18,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 500,
+    "wires": []
+  },
+  {
+    "id": "z3-text-status-ov",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Zone Status (Overview) \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-ov-z3",
+    "order": 1,
+    "width": 4,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 20,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "z3-text-alert-ov",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Active Alert (Overview) \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-ov-z3",
+    "order": 2,
+    "width": 4,
+    "height": 2,
+    "label": "Latest Alert",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 14,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 380,
+    "wires": []
+  },
+  {
+    "id": "z3-text-status-detail",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Zone Status (Detail) \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-z3-alerts",
+    "order": 1,
+    "width": 6,
+    "height": 1,
+    "label": "Zone Status",
+    "format": "{{msg.payload}}",
+    "layout": "row-center",
+    "style": true,
+    "font": "",
+    "fontSize": 22,
+    "color": "#ecf0f1",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 420,
+    "wires": []
+  },
+  {
+    "id": "z3-text-alert-detail",
+    "type": "ui-text",
+    "z": "tab-zone3",
+    "name": "Alert Message (Detail) \u2014 Zone 3 \u2014 Gazelle Valley",
+    "group": "grp-z3-alerts",
+    "order": 2,
+    "width": 6,
+    "height": 2,
+    "label": "Alert Message",
+    "format": "{{msg.payload}}",
+    "layout": "col-center",
+    "style": true,
+    "font": "",
+    "fontSize": 15,
+    "color": "#bdc3c7",
+    "wrapText": true,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 960,
+    "y": 480,
+    "wires": []
+  }
+]
